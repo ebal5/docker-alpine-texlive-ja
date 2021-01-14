@@ -22,6 +22,10 @@ RUN curl -L ftp://tug.org/historic/systems/texlive/2020/install-tl-unx.tar.gz | 
 RUN /tmp/install-tl-unx/install-tl --profile=/tmp/install-tl-unx/texlive.profile
 
 FROM base as alpine-texlive-ja-llmk
+LABEL maintainer="ebal5 on GitHub <eval.scheme@gmail.com>" \
+  version=1.2 \
+  description="Provide Japanese TeXLive with llmk and latexmk."
+
 COPY --from=builder /usr/local/texlive/ /usr/local/texlive
 ENV PATH /usr/local/texlive/2020/bin/x86_64-linuxmusl:$PATH
 RUN tlmgr install \
