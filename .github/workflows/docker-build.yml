@@ -10,8 +10,6 @@ on:
       - 'Dockerfile'
   pull_request:
     branches: [ master ]
-    paths:
-      - 'Dockerfile'
 
 jobs:
 
