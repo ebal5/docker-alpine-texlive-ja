@@ -1,4 +1,5 @@
 # ebal/texlive-ja-llmk
+![Docker Image CI](https://github.com/ebal5/docker-alpine-texlive-ja/workflows/Docker%20Image%20CI/badge.svg)
 
 > Minimal TeX Live image for Japanese based on alpine with [llmk](https://github.com/wtsnjp/llmk "GitHub Page")
 
